@@ -19,9 +19,10 @@ comments: true
 date: 2021-07-30
 ---
 
+<span style="color:darkred">minimal-mistakes 테마 기준으로 작성된 글입니다.</span>  
+
 #### 사이드바 메뉴 목록 설정
 ---
-<span style="color:darkred">minimal-mistakes 테마 기준으로 작성된 글입니다.</span>  
 참조 블로그 - [식빵맘](https://ansohxxn.github.io/)  
 
 `_data/navigation.yml` 파일에 사이드바 메뉴를 구성을 추가한다.
