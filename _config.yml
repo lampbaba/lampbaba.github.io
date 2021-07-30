@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dirt" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Lampbaba's Note"
+title                    : "램프바바의 개발노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Lampbaba's Note"
-description              : "Develop tips"
+name                     : "램프바바의 개발노트"
+description              : "Development tips"
 url                      : "https://apit.dev"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lampbaba"
+  name             : "램프바바"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a **Programmer**."
   location         : "Daegu, Republic of Korea"
