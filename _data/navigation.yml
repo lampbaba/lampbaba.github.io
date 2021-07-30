@@ -1,0 +1,55 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+
+docs:
+  - title: Database
+    children:
+      - title: "Oracle"
+        url: /oracle/
+        category: "oracle"
+      - title: "MS-SQL"
+        url: /mssql/
+        category: "mssql"
+      - title: "MariaDB"
+        url: /mariadb/
+        category: "mariadb"
+  - title: Server
+    children:
+      - title: "Ubuntu"
+        url: /ubuntu/
+        category: "ubuntu"
+      - title: "Windows Server"
+        url: /windows-server/
+        category: "windows-server"
+      - title: "Docker"
+        url: "/docker/"
+        category: "docker"
+  - title: Programming
+    children:
+      - title: "C#"
+        url: /csharp/
+        category: "csharp"
+      - title: "Go"
+        url: /go/
+        category: "go"
+      - title: "Flutter"
+        url: "/flutter/"
+        category: "flutter"
+      - title: "Kotlin"
+        url: "/kotlin/"
+        category: "kotlin"
+      - title: "Devexpress"
+        url: "/devexpress/"
+        category: "devexpress"
+      - title: "Vue"
+        url: "/vue/"
+        category: "vue"
+  - title: Etc
+    children:
+      - title: "Jekyll"
+        url: /jekyll/
+        category: "jekyll"
