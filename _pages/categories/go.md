@@ -1,8 +1,8 @@
 ---
 layout: archive
 permalink: /go/
-title: "Go"
-excerpt: "Go Language"
+# title: "Go"
+# excerpt: "Go Language"
 
 author_profile: true
 sidebar:
