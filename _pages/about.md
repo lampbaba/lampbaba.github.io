@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /about/
-title: "About Lampbaba"
+title: "램프바바"
 excerpt: "배울것이 많은 15년차 개발자의 노트"
 
 author_profile: true
