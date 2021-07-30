@@ -26,7 +26,7 @@ date: 2021-07-30
 
 `_data/navigation.yml` 파일에 사이드바 메뉴를 구성을 추가한다.
 
-```yml
+{% highlight yml linenos %}
 docs:
   - title: Database
     children:
@@ -52,31 +52,31 @@ docs:
       - title: "Jekyll"
         url: jekyll/
         category: "jekyll"
-```
+{% endhighlight %}
 #### 메뉴에 포스트수 표시
 ---
 메뉴의 우측에 게시글 수를 추가하기 위해서 `_includes\nav_list` 파일을 수정한다.
 
 기존파일의 메뉴 명칭을 표시하는 부분을 찾는다.
 
-```html
+{% highlight html linenos %}
 {% raw %}{% for child in nav.children %}
 <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
 {$ endfor %}{% endraw %}
-```
+{% endhighlight %}
 
 해당 카테고리를 찾아서 글수를 표시하는 부분을 추가한다.
 
-```html
+{% highlight html linenos %}
 {% raw %}{% for child in nav.children %}
 {% assign category = site.categories[child.category] | where_exp: "item", "item.hidden != true" %}
   <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }} ({{ category.size }})</a></li>
 {% endfor %}{% endraw %}
-```
+{% endhighlight %}
 
 완성된 파일
 
-```html
+{% highlight html linenos %}
 {% raw %}{% assign navigation = site.data.navigation[include.nav] %}
 
 <nav class="nav__list">
@@ -104,14 +104,14 @@ docs:
     {% endfor %}
   </ul>
 </nav>{% endraw %}
-```
+{% endhighlight %}
 
 #### 카테고리 페이지 만들기
 ---
 `_pages` 폴더 밑에 `categories` 라는 폴더(변경가능)를 만든 뒤 카테고리 별로 파일을 생성한다.  
 ex) `_pages/categories/jekyll.md`
 
-```ruby
+{% highlight ruby linenos %}
 ---
 layout: archive
 permalink: jekyll
@@ -182,4 +182,4 @@ toc_sticky: true
 
 date: 2021-07-30
 ---
-```
+{% endhighlight %}
