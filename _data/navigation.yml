@@ -45,9 +45,9 @@ docs:
       - title: "Devexpress"
         url: "/devexpress/"
         category: "devexpress"
-      - title: "Vue"
-        url: "/vue/"
-        category: "vue"
+      - title: "Vuejs"
+        url: "/vuejs/"
+        category: "vuejs"
   - title: Etc
     children:
       - title: "Jekyll"

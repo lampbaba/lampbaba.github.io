@@ -16,7 +16,7 @@ toc_sticky: true
 
 comments: true
 
-date: 2021-07-30
+date: 2021-07-31
 ---
 
 <span style="color:darkred">minimal-mistakes 테마 기준으로 작성된 글입니다.</span>  
