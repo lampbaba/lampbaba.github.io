@@ -37,7 +37,7 @@ mysqldump --single-transaction --routines --triggers --databases employee -uroot
 mysqldump --single-transaction --routines --triggers --all-databases -uroot -p1234 > ~/backup/all_20210802_0200.sql
 ```
 
-### MariaDB 복원
+#### MariaDB 복원
 ---
 
 위의 예제에서 백업된 데이터베이스를 기준으로 예제를 작성한다.
@@ -55,4 +55,18 @@ mysql -uroot -p1234 --comments employee < ~/backup/employee_20210802_0200.sql
 전체 데이터베이스를 복원한다.
 ```sh
 mysql -uroot -p1234 --comments < ~/backup/all_20210802_0200.sql
+```
+
+#### Docker용 MariaDB 백업
+---
+
+만약 MariaDB를 도커로 운영중이라면 아래와 같이 백업한다.  
+backupfile_path는 도커 내부의 경로가 아닌 도커를 실행중인 호스트의 경로이다.
+```sh
+docker exec [docker_name] /usr/bin/mysqldump [options] -u[user] -p[password] > [backupfile_path]
+```
+
+예제는 다음과 같다.
+```sh
+docker exec [mariadb_docker] /usr/bin/mysqldump --single-transaction --routines --triggers --databases employee -uroot -p1234 > ~/backup/employee_20210802_0200.sql
 ```
