@@ -1,6 +1,6 @@
 ---
 layout: custom-single
-title:  "백업 및 복원"
+title:  "MariaDB 백업 및 복원"
 categories:
   - mariadb
 tags: [programming, database, mariadb]
